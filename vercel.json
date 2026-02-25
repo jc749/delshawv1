@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/analyze.js": { "maxDuration": 60 },
+    "api/talent-radar.js": { "maxDuration": 60 },
+    "api/articles.js": { "maxDuration": 30 },
+    "api/podcasts.js": { "maxDuration": 30 },
+    "api/clients.js": { "maxDuration": 30 }
+  }
+}
